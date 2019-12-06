@@ -1,0 +1,74 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h5 class="center-align">Los campos marcados con * son obligatorios</h5>
+        <br>
+        <form id="frmCrear" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugNombre" type="text" class="validate necesario">
+                    <label for="lugNombre">* Nombre</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugDireccion" type="text" class="validate necesario">
+                    <label for="lugDireccion">* Direccion</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugTelefono" type="number" class="validate necesario">
+                    <label for="lugTelefono">* Telefono</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugCorreo" type="email" class="validate necesario">
+                    <label for="lugCorreo">* Correo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugLatitud" type="text" class="validate necesario">
+                    <label for="lugLatitud">* Latitud</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugLongitud" type="text" class="validate necesario">
+                    <label for="lugLongitud">* Longitud</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="lugDescripcion" type="text" class="validate necesario">
+                    <label for="lugDescripcion">* Descripcion</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">                     
+                    <select id="fkTipoLugar" class="browser-default necesario">
+                        <option value="" disabled selected>* Tipo lugar</option>
+                    </select>                    
+                </div>
+                <div class="input-field col s12 m6">                     
+                    <select id="fkMunicipio" class="browser-default necesario">
+                        <option value="" disabled selected>* Municipio</option>
+                    </select>                    
+                </div>
+            </div>  
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnCrearLugar" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>                     
+        </form>        
+        <script src="appclient/js/private/lugar/crearLugar.js" type="text/javascript"></script>
+    </div>
+</div>

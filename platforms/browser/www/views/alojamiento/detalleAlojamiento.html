@@ -1,0 +1,60 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h5 class="center-align">Detalle Alojamiento</h5>
+        <br>
+        <h5 class="center-align">Los campos marcados con * son obligatorios</h5>
+        <br>
+        <form id="frmUpdateAlojamiento" class="col s12">
+            <input type="hidden" class="form-control" 
+                           id="id" name="id" required/>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="aloCodigo" type="number" class="validate necesario">
+                    <label for="aloCodigo">* Codigo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="aloCapacidad" type="number" class="validate necesario">
+                    <label for="aloCapacidad">* Capacidad</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="aloPrecio" type="number" class="validate necesario">
+                    <label for="aloPrecio">* Precio</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="aloDescripcion" type="text" class="validate necesario">
+                    <label for="aloDescripcion">* Descripcion</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">                     
+                    <select id="fkLugar" class="validate necesario browser-default">
+                        <option value="" disabled selected>* Lugar</option>
+                    </select>                    
+                </div>
+                <div class="input-field col s12 m6">                     
+                    <select id="fkTipoAlojamiento" class="validate necesario browser-default">
+                        <option value="" disabled selected>* Alojamiento</option>
+                    </select>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnUpdateAlojamiento" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>                
+        </form>        
+        <script src="appclient/js/private/alojamiento/detalleAlojamiento.js" type="text/javascript"></script>
+    </div>
+</div>

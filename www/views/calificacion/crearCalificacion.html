@@ -1,0 +1,54 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h6 class="center-align">Los campos marcados con * son obligatorios</h6>
+        <br>
+        <form id="frmCrear" class="col s12">
+            <h5 class="center-align">¡Queremos saber tu opinión! </h5>
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="calValoracion" class="validate necesario browser-default">
+                        <option value="" disabled selected>* Valoracion de 1 a 5 ✯✯✯✯✯</option>
+                    </select>                                     
+                </div>              
+            </div>            
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="calComentario" type="text" class="validate necesario">
+                    <label for="calComentario">Comentario</label>
+                </div>             
+            </div>
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="fkAlojamiento" class="necesario browser-default">
+                       <option value="" disabled selected>* Alojamiento</option>
+                    </select>                    
+                </div>     
+            </div>
+            <!--<input type="hidden" class="form-control" 
+                   id="idAlojamiento" name="idAlojamiento"/>-->
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="fkUsuario" class="necesario browser-default">
+                        <option value="" disabled selected>* Usuario</option>
+                    </select>                    
+                </div>     
+            </div>
+
+            <!--<input type="hidden" class="form-control" 
+                   id="idUsuario" name="idUsuario"/>-->
+
+           <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnCrearCalificacion" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>        
+        </form>        
+        <script src="appclient/js/private/calificacion/crearCalificacion.js" type="text/javascript"></script>
+    </div>
+</div>

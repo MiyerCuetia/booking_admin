@@ -1,0 +1,42 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h6 class="center-align">Los campos marcados con * son obligatorios</h6>
+        <br>
+        <form id="frmCrear" class="col s12">            
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="rolEstado" class="necesario browser-default">
+                        <option value="" disabled selected>* Estado</option>
+                    </select>                                       
+                </div>              
+            </div>            
+            <div class="row">
+                <div class="input-field col s12">
+                    <select id="fkUsuario" class="necesario browser-default">
+                        <option value="" disabled selected>* Usuario</option>
+                    </select>
+                </div>             
+            </div>
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="fkRol" class="necesario browser-default">
+                        <option value="" disabled selected>* Rol</option>
+                    </select>                    
+                </div>     
+            </div>           
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnCrearRolUsuario" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>        
+        </form>        
+        <script src="appclient/js/private/rolUsuario/crearRolUsuario.js" type="text/javascript"></script>
+    </div>
+</div>

@@ -1,18 +1,72 @@
 <div class="navbar-fixed">
     <nav class="orange darken-4" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Booking</a>
-            <!-- Drop downs submenus -->
-            <ul id="dropdown1" class="dropdown-content grey darken-1 ">
-                <li><a href="#!" class="grey-text text-lighten-3">one</a></li>
-                <li><a href="#!" class="grey-text text-lighten-3">two</a></li>
+            <!-- Drop downs submenus -->       
+            <ul id="dropdown1" class="dropdown-content orange darken-1">                
+                <li><a href="?p=tipoLugar/crearTipoLugar"><i class="material-icons">format_align_left</i>Crear tipo lugar</a></li>    
+                <li><a href="?p=tipoLugar/listarTipoLugar"><i class="material-icons">business</i>Listar tipo lugar</a></li>
+
                 <li class="divider"></li>
-                <li><a href="#!" class="grey-text text-lighten-3">three</a></li>
+            </ul>            
+            <ul id="dropdown2" class="dropdown-content orange darken-1">                
+                <li><a href="?p=lugar/crearLugar"><i class="material-icons">format_align_left</i>Crear  lugar</a></li>    
+                <li><a href="?p=lugar/listarLugar"><i class="material-icons">business</i>Listar  lugar</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            <ul id="dropdown3" class="dropdown-content orange darken-1">
+                <li><a href="?p=tipoAlojamiento/crearTipoAlojamiento"><i class="material-icons">format_align_left</i>Crear tipo alojamiento</a></li>    
+                <li><a href="?p=tipoAlojamiento/listarTipoAlojamiento"><i class="material-icons">local_hotel</i>Listar tipo alojamiento</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            <ul id="dropdown4" class="dropdown-content orange darken-1">
+                <li><a href="?p=alojamiento/crearAlojamiento"><i class="material-icons">format_align_left</i>Crear alojamiento</a></li>    
+                <li><a href="?p=alojamiento/listarAlojamiento"><i class="material-icons">local_hotel</i>Listar alojamiento</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            
+            <ul id="dropdown5" class="dropdown-content orange darken-1">
+                <li><a href="?p=foto/crearFoto"><i class="material-icons">format_align_left</i>Crear foto</a></li>    
+                <li><a href="?p=foto/listarFoto"><i class="material-icons">panorama</i>Listar foto</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            <ul id="dropdown6" class="dropdown-content orange darken-1">
+                <li><a href="?p=usuario/crearUsuario"><i class="material-icons">format_align_left</i>Crear usuario</a></li>    
+                <li><a href="?p=usuario/listarUsuario"><i class="material-icons">people</i>Listar usuario</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            <ul id="dropdown7" class="dropdown-content orange darken-1">
+                <li><a href="?p=calificacion/crearCalificacion"><i class="material-icons">format_align_left</i>Crear calificacion</a></li>    
+                <li><a href="?p=calificacion/listarCalificacion"><i class="material-icons">star</i>Listar calificacion</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            <ul id="dropdown8" class="dropdown-content orange darken-1">
+                <li><a href="?p=rol/crearRol"><i class="material-icons">format_align_left</i>Crear rol</a></li>    
+                <li><a href="?p=rol/listarRol"><i class="material-icons">transfer_within_a_station</i>Listar rol</a></li>
+
+                <li class="divider"></li>
+            </ul>
+            <ul id="dropdown9" class="dropdown-content orange darken-1">
+                <li><a href="?p=rolUsuario/crearRolUsuario"><i class="material-icons">format_align_left</i>Crear rol usuario</a></li>    
+                <li><a href="?p=rolUsuario/listarRolUsuario"><i class="material-icons">transfer_within_a_station</i>Listar  rol usuario</a></li>
+
+                <li class="divider"></li>
+            </ul>                                  
+            <ul id="dropdown10" class="dropdown-content orange darken-1">
+                <li><a href="?p=reserva/crearReserva"><i class="material-icons">format_align_left</i>Crear reserva</a></li>    
+                <li><a href="?p=reserva/listarReserva"><i class="material-icons">business_center</i>Listar reserva</a></li>
+
+                <li class="divider"></li>
             </ul>
             <ul class="right hide-on-med-and-down">
                 <li><a href="?p=home">Home</a></li>
-                <li><a href="?p=register">Registro</a></li>
-                <li><a href="?p=login">Login</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="?p=usuario/crearUsuario">Registro</a></li>
+                <li><a href="?p=login">Login</a></li>                
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -23,38 +77,87 @@
     <li>
         <div class="user-view">
             <div class="background">
-                <img src="images/office.jpg">
+                <img style="width: 300px; height: auto" src="appclient/assets/background.png">
             </div>
-            <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-            <a href="#name"><span class="white-text name">John Doe</span></a>
-            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            <a href="#user"><img class="circle" src="appclient/assets/blogger.png"></a>
+            <a href="#name"><span class="white-text name">Pepito P</span></a>
+            <a href="#email"><span class="white-text email">pep@gmail.com</span></a>
         </div>
+    </li>   
+    <li><a class="subheader grey-text text-lighten-4">Subheader</a></li>    
+    <li><a class="waves-effect grey-text text-lighten-4" href="?p=home"><i class="material-icons grey-text text-lighten-4">home</i>Home</a></li>    
+    <li><a class="waves-effect grey-text text-lighten-4" href="?p=login"><i class="material-icons grey-text text-lighten-4">contact_mail</i>Login</a></li>    
+    
+    <li>
+        <div class="divider"></div>
+    </li>            
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown1">
+            Tipo Lugar<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
     </li>
-    <li><a href="#!" class="grey-text text-lighten-4">
-            <i class="material-icons grey-text text-lighten-4">cloud</i>First Link With Icon</a>
+    
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown2">
+            Lugar<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
     </li>
-    <li><a href="#!" class="grey-text text-lighten-4">Second Link</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>    
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown3">
+            Tipo Alojamiento<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown4">
+            Alojamiento<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>
     <li>
         <div class="divider"></div>
     </li>
-    <li><a class="subheader grey-text text-lighten-4">Subheader</a></li>    
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=home"><i class="material-icons grey-text text-lighten-4">home</i>Home</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=register">Registro</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=login">Login</a></li>
-      
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearAlojamiento">Alojamiento</a></li>   
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearCalificacion">Calificacion</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearFoto">Foto</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearLugar">Lugar</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearReserva">Reserva</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearRol">Rol</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearRolUsuario">Rol Usuario</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearTipoAlojamiento">Tipo Alojamiento</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearTipoLugar">Tipo Lugar</a></li>
-    <li><a class="waves-effect grey-text text-lighten-4" href="?p=crearUsuario">Usuario</a></li>
     <li>
-        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown1">
-            Dropdown<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown5">
+            Foto<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
         </a>
     </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown6">
+            Usuario<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown7">
+            Calificacion<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown8">
+            Rol<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown9">
+            Rol usuario<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li>
+        <a class="dropdown-trigger grey-text text-lighten-4" href="#!" data-target="dropdown10">
+            Reserva<i class="material-icons right grey-text text-lighten-4">arrow_drop_down</i>
+        </a>
+    </li>          
 </ul>

@@ -1,0 +1,50 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h5 class="center-align">Los campos marcados con * son obligatorios</h5>
+        <br>
+        <form id="frmCrear" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="fotRuta" type="text" class=" necesario">
+                    <label for="fotRuta">* Foto ruta</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="fotLabel" type="text" class="validate necesario">
+                    <label for="fotLabel">* Foto label</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="fotDescripcion" type="text" class="validate necesario">
+                    <label for="fotDescripcion">* Descripcion</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">               
+                    <select id="fkLugar" class="necesario browser-default">
+                        <option value="" disabled selected>* Lugar</option>
+                    </select>                    
+                </div>
+                <div class="input-field col s12 m6">                     
+                    <select id="fkAlojamiento" class="necesario browser-default">
+                        <option value="" disabled selected>* Alojamiento</option>
+                    </select>                    
+                </div>
+            </div>                     
+           <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnCrearFoto" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>         
+        </form>        
+        <script src="appclient/js/private/foto/crearFoto.js" type="text/javascript"></script>
+    </div>
+</div>

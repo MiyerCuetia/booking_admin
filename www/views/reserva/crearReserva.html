@@ -1,0 +1,61 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h5 class="center-align">Los campos marcados con * son obligatorios</h5>
+        <br>
+        <form id="frmCrear" class="col s12">
+            <div class="row">
+                <div class="col s12">                                                            
+                    <label for="resFechaRegistro">* Fecha Registro</label>
+                    <input id="resFechaRegistro" type="date"  class="browser-default  necesario btn_center"/>                    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col s12">                                        
+                    <label for="resFechaLlegada">* Fecha Llegada</label>
+                    <input id="resFechaLlegada"  type="date" class="browser-default necesario btn_center"/>                    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">                      
+                    <label for="resFechaSalida">* Fecha Salida</label>
+                    <input id="resFechaSalida" type="date" class="browser-default necesario btn_center"/>                                        
+                </div>
+            </div>
+            <input type="hidden" id="estadoReservado" name="estadoReservado" value="0">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="resPago" type="number" class="validate necesario">
+                    <label for="resPago">* Pago</label>
+                </div>
+            </div>
+            
+            <div class="row">               
+                <div class="input-field col s12 m6">                     
+                    <select id="fkAlojamiento" class="necesario browser-default">
+                        <option value="" disabled selected>* Alojamiento</option>
+                    </select>                    
+                </div>
+                 <div class="input-field col s12 m6">                     
+                    <select id="fkCliente" class="necesario browser-default">
+                        <option value="" disabled selected>* Cliente</option>
+                    </select>                    
+                </div>
+            </div>                     
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnCrearReserva" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>         
+        </form>
+        
+        <script src="appclient/js/private/reserva/crearReserva.js" type="text/javascript"></script>        
+    </div>
+</div>

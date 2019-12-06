@@ -11,7 +11,7 @@ function loadHTML(zona, obj, callback) {
             }
         },
         error: function (e, err) {
-            alert("Error al cargar el html "+zona);
+            alert("Error al cargar el html " + zona);
         }
     });
 }
@@ -25,7 +25,7 @@ function getParameterByName(param) {
 
 function renderView() {
     loadHTML("template/master.html", $("body"), function (data) {
-        //*******
+        //*******        
         loadHTML("template/nav.html", $("#navPrincipal"), null);
         loadHTML("template/footer.html", $("#footerPrincipal"), null);
 
@@ -76,7 +76,7 @@ function httpConnect(route, data, method, success = null, error = null, beforeSe
             };
             //createMessage(r);
             if (error !== null) {
-                error(e.responseText);
+                error(e);
             }
         }
     });

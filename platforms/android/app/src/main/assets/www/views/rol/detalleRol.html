@@ -1,0 +1,31 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h5 class="center-align">Detalle Rol</h5>
+        <br>
+        <h5 class="center-align">Los campos marcados con * son obligatorios</h5>
+        <br>
+        <form id="frmUpdateTipoLugar" class="col s12">
+            <input type="hidden" class="form-control" 
+                   id="id" name="id" required/>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="rolNombre" type="text" class="validate necesario">
+                    <label for="rolNombre">* Nombre</label>
+                </div>      
+            </div> 
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnUpdateRol" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>                
+        </form>        
+        <script src="appclient/js/private/rol/detalleRol.js" type="text/javascript"></script>
+    </div>
+</div>

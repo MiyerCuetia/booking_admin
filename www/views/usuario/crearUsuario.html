@@ -1,0 +1,64 @@
+<div class="section">
+    <div class="row">
+        <br>
+        <h5 class="center-align">Los campos marcados con * son obligatorios</h5>
+        <br>
+        <form id="frmCrear" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuIdentificacion" type="number" class="validate necesario">
+                    <label for="usuIdentificacion">* Numero Identificacion</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuNombres" type="text" class="validate necesario">
+                    <label for="usuNombres">* Nombres</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="usuGenero" class="necesario browser-default">
+                        <option value="" disabled selected>* Genero</option>                        
+                    </select>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuCorreo" type="email" class="validate necesario">
+                    <label for="usuCorreo">* Correo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuTelefono" type="number" class="validate necesario">
+                    <label for="usuTelefono">* Telefono</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuAvatar" type="text" class="validate necesario">
+                    <label for="usuAvatar">* Avatar</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">                     
+                    <select id="fkTipoIdentificacion" class="necesario browser-default">
+                        <option value="" disabled selected>* Tipo Indentificacion</option>
+                    </select>                    
+                </div>     
+            </div>                     
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="reset" value="Cancelar" class="btn btn_center">                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="btnCrearUsuario" type="button" value="Enviar" class="btn btn_center validate">
+                </div>
+            </div>   
+        </form>        
+        <script src="appclient/js/private/usuario/crearUsuario.js" type="text/javascript"></script>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<main class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h2>Detalle Reserva <b></b>!</h2>
+            <form id="frmUpdateReserva">
+                <input type="hidden" class="form-control" 
+                       id="id" name="id" required/>
+                <div class="row">
+                    <div class="input-field col s12">                                                            
+                        <input id="resFechaRegistro" type="text" class=" datepickerui necesario"/>                    
+                        <label for="resFechaRegistro">* Fecha Registro</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">                                        
+                        <input id="resFechaLlegada"  type="text" class="datepickerui necesario"/>                    
+                        <label for="resFechaLlegada">* Fecha Llegada</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">                      
+                        <input id="resFechaSalida" type="text" class="datepickerui necesario"/>                    
+                        <label for="resFechaSalida">* Fecha Salida</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">                      
+                        <input id="resFechaChecking" type="text" class="datepickerui necesario"/>                    
+                        <label for="resFechaChecking">* Fecha Cheking</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">                      
+                        <input id="resFechaCheckout" type="text" class="datepickerui necesario"/>                    
+                        <label for="resFechaCheckout">* Fecha Checkout</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">                     
+                        <select id="resEstado" class="necesario browser-default">
+                            <option value="" disabled selected>* Estado</option>
+                        </select>                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="resPago" type="number" class="validate necesario">
+                        <label for="resPago">* Pago</label>
+                    </div>
+                </div>
+
+                <div class="row">               
+                    <div class="input-field col s12 m6">                     
+                        <select id="fkAlojamiento" class="necesario browser-default">
+                            <option value="" disabled selected>* Alojamiento</option>
+                        </select>                    
+                    </div>
+                    <div class="input-field col s12 m6">                     
+                        <select id="fkCliente" class="necesario browser-default">
+                            <option value="" disabled selected>* Cliente</option>
+                        </select>                    
+                    </div>
+                </div> 
+                <div class="row">               
+                    <div class="input-field col s12 m6">                     
+                        <select id="fkUsuarioChecking" class="necesario browser-default">
+                            <option value="" disabled selected>* Usuario Checking</option>
+                        </select>                    
+                    </div>
+                    <div class="input-field col s12 m6">                     
+                        <select id="fkUsuarioCheckout" class="necesario browser-default">
+                            <option value="" disabled selected>* Usuario Checkout</option>
+                        </select>                    
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="reset" value="Cancelar" class="btn btn_center">                    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="btnUpdateReserva" type="button" value="Enviar" class="btn btn_center validate">
+                    </div>
+                </div> 
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 alert alert-success hide" >
+            <strong>Success!</strong> <p></p>
+        </div>
+    </div>
+</main>
+
+<script src="appclient/libs/jquery/ui/jqueryui.js" type="text/javascript"></script>
+<script src="appclient/js/elements.js" type="text/javascript"></script>
+<script src="appclient/js/private/reserva/detalleReserva.js" type="text/javascript"></script>
+
